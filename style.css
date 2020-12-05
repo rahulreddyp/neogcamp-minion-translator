@@ -1,7 +1,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
 
-html {
+:root {
+    --primary-color: #FBBF24;
+}
+
+body {
     font-family: 'Raleway', sans-serif;
+    margin: auto;
+}
+
+nav {
+    background-color: var(--primary-color);
+    height: 4rem;
+}
+
+.nav-heading {
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    font-size: x-large;
+    letter-spacing: 2px;
+    padding: 1rem 0;
+}
+
+.main {
+    background-image: url(./images/minions_pic.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.main p {
+    color: white;
+    font-style: italic;
+    font-weight: bold;
+    font-size: large;
+    text-shadow: -1px 1px 0 #000,
+                        1px 1px 0 #000,
+                        1px -1px 0 #000,
+                        -1px -1px 0 #000;
+}
+
+.container-center {
+    padding: 1rem;
+    max-width: 600px;
+    margin: auto;
 }
 
 textarea {
@@ -14,15 +58,15 @@ textarea {
 }
 
 #btn-translate {
+    justify-content: center;
     background-color: #F59E0B;
     border: 4px double #cccccc;
     border-radius: 5px;
-    color: white;
-    padding: 15px 32px;
+    color: black;
+    padding: 12px 30px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+    font-size: 17px;
     cursor: pointer;
 }
 
@@ -32,8 +76,21 @@ textarea {
 
 #output {
     border: 1px solid black;
+    background-color: white;
     height: 10vh;
     width: 80%;
     margin: 1rem;
     padding: 1rem;
+}
+
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    background-color: var(--primary-color);
+    padding: 2rem 0;
+    text-align: center;
+    justify-content: center;
 }
