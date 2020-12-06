@@ -20,9 +20,9 @@ function clickHandler() {
     const inputText = txtInput.value; //taking input
     // Calling server for processing
     fetch(getTramslationURL(inputText))
-        .then(response => console.log(response.json()))
-            .then(json => {
-                var translatedText = json.contents.translated;
+        .then(response => response.json())
+        .then(json => {
+                const translatedText = json.contents.translated;
                 outputBox.innerText = translatedText // output
             })
         .catch(errorHandler)
