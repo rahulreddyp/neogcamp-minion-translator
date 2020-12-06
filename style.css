@@ -7,31 +7,30 @@
 body {
     font-family: 'Raleway', sans-serif;
     margin: auto;
-}
-
-nav {
-    background-color: var(--primary-color);
-    height: 4rem;
-}
-
-.nav-heading {
-    font-weight: bold;
-    font-style: italic;
-    text-align: center;
-    font-size: x-large;
-    letter-spacing: 2px;
-    padding: 1rem 0;
-}
-
-.main {
-    background-image: url(./images/minions_pic.jpg);
+    background-image: url(./images/minion.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
 }
 
-.main p {
+/* nav {
+    background-color: var(--primary-color);
+    height: 4rem;
+} */
+#heading {
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: 2px;
+    color: chocolate;
+    padding: 1rem 0;
+}
+
+.main {
+    padding: 0 6rem;
+}
+
+.output-txt {
     color: white;
     font-style: italic;
     font-weight: bold;
@@ -44,7 +43,7 @@ nav {
 
 .container-center {
     padding: 1rem;
-    max-width: 600px;
+    max-width: 700px;
     margin: auto;
 }
 
@@ -83,14 +82,21 @@ textarea {
     padding: 1rem;
 }
 
-.footer {
-    position: absolute;
+.footer-section{
+    background-color: #111827;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.footer-section h2 {
+    color:#FCD34D;
+    text-align: center;
+    
+}
+.footer-section  p {
     left: 0;
     bottom: 0;
-    height: 100px;
-    width: 100%;
-    background-color: var(--primary-color);
-    padding: 2rem 0;
+    color:white;
     text-align: center;
     justify-content: center;
 }
