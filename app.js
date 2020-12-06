@@ -12,7 +12,7 @@ function getTramslationURL(text) {
 
 function errorHandler(error) {
     console.log("Error Occured:", error);
-    alert("Error occured! please try again after some time");
+    alert("Error occured! Possible too many requests, please try again after some time");
 }
 
 function clickHandler() {
