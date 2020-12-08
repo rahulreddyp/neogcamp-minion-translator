@@ -4,31 +4,28 @@
     --primary-color: #FBBF24;
 }
 
-body {
-    font-family: 'Raleway', sans-serif;
-    margin: auto;
-    background-image: url(./images/minion.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
+html {
+    background: url(./images/minion.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
 }
 
-/* nav {
-    background-color: var(--primary-color);
-    height: 4rem;
-} */
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: auto;
+}
+
 #heading {
     font-weight: bold;
     font-style: italic;
     letter-spacing: 2px;
-    color: chocolate;
+    color: #F59E0B;
     padding: 1rem 0;
 }
 
-.main {
-    padding: 0 6rem;
-}
+
 
 .output-txt {
     color: white;
@@ -51,6 +48,7 @@ textarea {
     width: 80%;
     height: 10vh;
     display: block;
+    border-radius: 9px;
     margin: 1rem;
     padding: 1rem;
     resize: none;
@@ -75,6 +73,7 @@ textarea {
 
 #output {
     border: 1px solid black;
+    border-radius: 9px;
     background-color: white;
     height: 10vh;
     width: 80%;
@@ -84,12 +83,13 @@ textarea {
 
 .footer-section{
     background-color: #111827;
+    opacity: 0.6;
     border-radius: 1rem;
     padding: 1rem;
 }
 
 .footer-section h2 {
-    color:#FCD34D;
+    color:#d9ff00;
     text-align: center;
     
 }
